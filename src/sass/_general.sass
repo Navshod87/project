@@ -1,0 +1,473 @@
+nav
+    height: 51px
+    background-color: #212121
+
+.hamburger
+    display: none
+
+.menu
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+    padding: 13px 70px
+    
+    &_link
+        font-family: Roboto
+        font-size: 15px
+        font-weight: 300
+        color: #ffffff
+    &_item
+        border-right: 2px dotted black
+        padding-right: 17px
+        &:last-child
+            border-right: none 
+
+.subheader
+    height: 84px
+    background-color: rgba(0, 0, 0, 0.6)
+    &_logo
+        display: block
+        margin-top: 22px
+    &_off
+        opacity: 0.5
+        font-family: Roboto
+        font-size: 13px
+        font-weight: 100
+        color: #ffffff
+    &_call
+        margin-top: 23px
+        font-family: Roboto
+        font-size: 12px
+        font-weight: 300
+        color: #ffffff
+
+    &_num
+        margin-bottom: 26px
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 400
+        text-transform: uppercase
+        color: #ffffff
+
+    &_btn
+        margin-top: 20px
+        border: none
+        border-radius: 7px
+        width: 178px
+        height: 48px
+        background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+        box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11)
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
+        color: #ffffff
+        @include btn_hover
+
+
+
+.my-section
+    min-height: 800px
+    background: url("../img/car1.png") center (center / cover) no-repeat
+    .section_header
+        margin: 0
+        margin-top: 27px
+        font-family: Roboto
+        font-size: 50px
+        font-weight: 900
+        text-transform: uppercase
+        color: #ffffff
+        text-align: center
+    .section_header2
+        margin: 0
+        margin-top: 5px
+        font-size: 30px
+        font-weight: 700
+        text-transform: uppercase
+        color: #ffffff
+        text-align: center
+    .section_text
+        margin-top: 23px
+        font-family: Roboto
+        font-size: 18px
+        line-height: 24px
+        font-weight: 400
+        color: #ffffff
+        text-align: center
+    .section_btn
+        margin: 115px auto
+        width: 265px
+        height: 69px
+        background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+        border: none
+        border-radius: 6px
+        box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.11)
+        font-family: Roboto
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
+        color: #ffffff
+        @include btn_hover
+
+.sec-section
+    min-height: 800px
+    padding: 71px 0 65px 0
+    .blck-btn
+        margin-top: 71px
+        font-family: Roboto
+        font-size: 11px
+        font-weight: 100
+        text-transform: uppercase
+        color: #ffffff
+        width: 112px
+        height: 24px
+        background-color: #000000
+    .sec-header
+        margin-top: 44px
+        text-align: center
+        font-family: Roboto
+        font-size: 36px
+        font-weight: 700
+        text-transform: uppercase
+        color: #222222
+    .reason-block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 35px
+        .reason-round
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 113px
+            height: 113px
+            background-color: #1eacc7
+            border-radius: 100%
+    .card_header
+        margin-top: 40px
+        font-family: Roboto
+        font-size: 17px
+        line-height: 21px
+        font-weight: 400
+        color: #1eacc7
+
+    .card_text
+        font-size: 15px
+        font-weight: 300
+        color: #202020
+
+
+
+
+.mobile
+    min-height: 840px
+    padding: 48px 0 80px 0
+    background: url("../img/background_1.jpg") center center/cover no-repeat
+    
+    .row
+        margin-top: 32px
+    
+    .label
+        margin: 0 auto
+        height: 24px
+        width: 112px
+        padding: 5px 12px
+        background-color: #000000
+        color: #ffffff
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+
+    .title
+        margin-bottom: 0
+        margin-top: 38px
+        color: #222222
+        font-size: 38px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+
+    .subtitle
+        font-family: Roboto
+        font-size: 17px
+        font-weight: 400
+        color: #222222
+        text-align: center                   
+
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        padding-top: 91px
+        background: url("../img/_1.png") center center/cover no-repeat
+        &_subtitle
+            font-family: Roboto
+            font-size: 24px
+            line-height: 31px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            text-align: center
+        &_plus
+            display: flex 
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            width: 26px
+            height: 26px
+            background-color: #000
+            margin: 0 auto
+            border-radius: 100%
+            cursor: pointer
+            &::before
+                content: ""
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $main_color 
+            &::after
+                content: ""
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                display: block
+                height: 14px
+                width: 2px
+                background-color: $main_color
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+            
+.car-section
+    min-height: 840px
+    background-color: #070716
+    padding: 48px 0 80px 0
+
+    .label_1
+        margin: 0 auto
+        height: 24px
+        width: 112px
+        padding: 5px 12px
+        background-color: #fff
+        color: #000
+        font-size: 11px
+        font-weight: 400
+        text-transform: uppercase
+    .title_1
+        margin-bottom: 0
+        margin-top: 38px
+        color: #fff
+        font-size: 38px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+    .subtitle_1
+        font-family: Roboto
+        font-size: 17px
+        font-weight: 400
+        color: #fff
+        text-align: center
+    .uber_car
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 56px
+    .car_descr
+        margin-top: 4px
+        font-family: Roboto
+        font-size: 17px
+        line-height: 24px
+        font-weight: 300
+        color: #222222
+        text-align: center
+
+.require
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0
+    &_title
+        font-family: Roboto
+        font-size: 22px
+        line-height: 24px
+        font-weight: 400
+        color: #1ca8c3
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            display: block
+            font-size: 17px
+            font-weight: 300
+            color: #222222
+            margin-bottom: 10px
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                left: -50px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url("../icons/check_blue.png") center center/cover no-repeat
+    &_descr
+        margin-top: 25px
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        color: #1ca8c3
+.world
+    min-height: 717px
+    background-color: #070716
+    padding: 57px 0 80px 0
+    background: url("../img/world.jpg") center center/cover no-repeat
+    .label_2
+        margin: 0 auto
+        width: 112px
+        height: 24px
+        background-color: #ffffff
+        font-family: Roboto
+        font-size: 11px
+        font-weight: 200
+        text-transform: uppercase
+        color: #070716
+        text-align: center
+        padding: 5px
+
+    .title_2
+        margin-bottom: 0
+        margin-top: 38px
+        color: #fff
+        font-size: 38px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+
+    .subtitle_2
+        font-family: Roboto
+        font-size: 17px
+        font-weight: 400
+        color: #fff
+        text-align: center
+
+    &_link
+        margin-top: 654px
+        font-family: Roboto
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        color: #1fbad6
+        text-align: center
+.footer
+    min-height: 156px
+    .taya
+        margin: 0 auto
+        margin-top: 14px
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+    .main-word
+        margin-top: 34px
+        margin-left: -5px
+        font-family: Roboto
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+        color: #070716
+    .sec-word
+        margin-top: 34px
+        margin-left: -15px
+        font-family: Roboto
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+        color: #070716
+    .thrd-word
+        margin-top: 34px
+        margin-left: 10px
+        font-family: Roboto
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+        color: #070716    
+    .fou
+        margin-top: 16px
+        margin-left: -48px
+        font-family: Roboto
+        font-size: 12px
+        font-weight: 300
+        text-transform: uppercase
+        color: #999999
+    .fve
+        margin-top: 16px
+        margin-left: -76px
+        font-family: Roboto
+        font-size: 12px
+        font-weight: 300
+        text-transform: uppercase
+        color: #999999
+    .sex
+        margin-top: 16px
+        margin-left: -76px
+        font-family: Roboto
+        font-size: 12px
+        font-weight: 300
+        text-transform: uppercase
+        color: #999999
+    .sev
+        margin-top: 16px
+        margin-left: -65px
+        font-family: Roboto
+        font-size: 12px
+        font-weight: 300
+        text-transform: uppercase
+        color: #999999
+    .eght
+        margin-top: 16px
+        margin-left: -110px
+        font-family: Roboto
+        font-size: 12px
+        font-weight: 300
+        text-transform: uppercase
+        color: #999999
+    .seko
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: -50px
+        i
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 34px
+            color: #fff
+            font-size: 24px
+            margin-left: 15px
+            width: 32px
+            height: 32px
+            background-color: #070716
+            border-radius: 100%

@@ -1,0 +1,100 @@
+@media ( max-width: 991px )
+    .menu
+        &_item
+            padding-right: 13px
+        &_link
+            font-size: 9px
+    .my-section
+        .section_header
+            font-size: 40px
+    .sec-section
+        .reason-block
+            align-items: flex-start
+    .mobile
+        .title
+            font-size: 30px
+        .subtitle
+            font-size: 20px
+        &_item
+            width: 230px        
+@media ( max-width: 767px )
+    .menu
+        &_item
+            padding-right: 7px
+        &_link
+            font-size: 7px
+    
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 20px
+        span
+            display: block 
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-last-child(3)
+                    transform: rotate(-45deg)
+                &:nth-last-child(2)
+                    display: none
+                &:nth-last-child(1)
+                    transform: rotate(45deg)
+                        
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_off
+            font-size: 11px
+        &_btn
+            margin-top: 26px
+            width: 150px
+            height: 38px
+        &_num
+            font-size: 17px
+
+    .my-section
+        .section_header
+            font-size: 30px
+        .section_header2
+            font-size: 23px
+        .section_btn
+            width: 210px
+            height: 50px
+@media ( max-width: 576px )
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0,6s all
+        &_active
+            left: 0
+        &_item
+            padding: 0
+            border: none
+        &_item
+            font-size: 20px
+    
+    .hamburger
+        display: block
+
+
+        
+    
+
+        
+            
